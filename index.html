@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Borovych S.</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+  <div class="container">
+   <a href="index.html" class="logo-link">
+  <img src="img/logo.jpg" alt="Borovych S." height="100" class="me-3">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav gap-4 mx-auto">  
+        <li class="nav-item">
+          <a class="nav-link active text-white" href="index.html">Головна</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Про Нас</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="objectsDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Об’єкти
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="objectsDropdown">
+            <li><a class="dropdown-item" href="#">У продажі</a></li>
+            <li><a class="dropdown-item" href="#">Продані</a></li>
+            <li><a class="dropdown-item" href="#">Комерція</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Контакти</a>
+        </li>
+      </ul>
+
+      <a class="nav-link logout-btn text-warning fs-3" href="#" data-bs-toggle="modal" data-bs-target="#signUpModal">
+    <i class="bi bi-box-arrow-in-right fw-bold"></i>
+  </a>
+
+  <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white border-0 shadow-lg p-3 rounded-3" style="background-color: #1b1b1b;">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-semibold">Sign Up</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="fullname" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullname">
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100 py-2 rounded-pill fw-semibold">Sign Up</button>
+          </form>
+
+          <p class="text-center mt-3">Already have an account?
+            <a href="#" class="text-warning text-decoration-none">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/1.jpg" class="d-block w-100" alt="Фото 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.jpg" class="d-block w-100" alt="Фото 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.jpg" class="d-block w-100" alt="Фото 3">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Попереднє</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Наступне</span>
+    </button>
+</div>
+<button class="choose-btn">Обрати об’єкт</button>
+<section class="features-section py-5">
+
+  <div class="container">
+   
+    <div class="d-flex align-items-center mb-5">
+      <h2 class="fw-bold me-3 mb-0">Чому нас обирають</h2>
+      <div class="title-line flex-grow-1"></div>
+    </div>
+ 
+    <div class="row text-center gy-5">
+  
+      <div class="col-md-4">
+        <div class="feature-item">
+          <div class="icon mb-3"><i class="bi bi-shield-check"></i></div>
+          <h5 class="fw-bold">Гарантії</h5>
+          <p>Стабільна компанія, що динамічно розвивається та має гарну репутацію</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-item">
+          <div class="icon mb-3"><i class="bi bi-geo-alt"></i></div>
+          <h5 class="fw-bold">Розміщення</h5>
+          <p>Кращі місця для життя у тихих районах міста і в центрі</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-item">
+          <div class="icon mb-3"><i class="bi bi-star"></i></div>
+          <h5 class="fw-bold">Умови</h5>
+          <p>Лояльні умови придбання та розстрочка без підвищення ціни</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-item">
+          <div class="icon mb-3"><i class="bi bi-hammer"></i></div>
+          <h5 class="fw-bold">Якість</h5>
+          <p>Якісне сучасне будівництво та передові технології</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-item">
+          <div class="icon mb-3"><i class="bi bi-wallet2"></i></div>
+          <h5 class="fw-bold">Доступність</h5>
+          <p>Доступна ціна та вигідна інвестиція на етапі будівництва</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-item">
+          <div class="icon mb-3"><i class="bi bi-lightbulb"></i></div>
+          <h5 class="fw-bold">Зобов’язання</h5>
+          <p>Завжди своєчасне введення в експлуатацію</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<section class="objects-section py-5">
+  <div class="container">
+
+    <div class="d-flex align-items-center mb-5">
+      <h2 class="fw-bold me-3 mb-0">Об’єкти</h2>
+      <div class="title-line flex-grow-1"></div>
+    </div>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="img/4.jpg" alt="Космос" class="img-fluid object-img">
+      </div>
+      <div class="col-md-6">
+        <div class="object-info">
+          <h4 class="fw-bold">КОСМОС на пр. Науки (Гагаріна), 167</h4>
+          <p><i class="bi bi-geo-alt"></i> пр. Науки (Гагаріна), 167</p>
+          <p><i class="bi bi-calendar-event"></i> Початок будівництва: жовтень 2021</p>
+          <p><i class="bi bi-building"></i> Введення в експлуатацію: літо 2026 р</p>
+          <div class="object-line-bold"></div>
+        </div>
+      </div>
+    </div>
+     <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="img/5.jpg" alt="Космос" class="img-fluid object-img">
+      </div>
+      <div class="col-md-6">
+        <div class="object-info">
+          <h4 class="fw-bold">"PROMENADE" на пр. Слобожанський, 83а</h4>
+          <p><i class="bi bi-geo-alt"></i> пр. Слобожанський 83а</p>
+          <p><i class="bi bi-calendar-event"></i> Початок будівництва:  січень 2022 р.</p>
+          <p><i class="bi bi-building"></i> Введення в експлуатацію: 1 черга – лютий 2026 р.</p>
+          <div class="object-line-bold"></div>
+        </div>
+      </div>
+    </div>
+
+     <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="img/6.jpg" alt="Космос" class="img-fluid object-img">
+      </div>
+      <div class="col-md-6">
+        <div class="object-info">
+          <h4 class="fw-bold">"ЗАТИШНИЙ-2" на вул. Мандриківська, 298</h4>
+          <p><i class="bi bi-geo-alt"></i> вул. Мандриківська, 298</p>
+          <p><i class="bi bi-calendar-event"></i> Початок будівництва: січень 2021</p>
+          <p><i class="bi bi-building"></i> Введення в експлуатацію: осінь 2025</p>
+          <div class="object-line-bold"></div>
+        </div>
+      </div>
+    </div>
+
+     <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="img/7.jpg" alt="Космос" class="img-fluid object-img">
+      </div>
+      <div class="col-md-6">
+        <div class="object-info">
+          <h4 class="fw-bold">RESPECT HALL на вул. Виконкомівська, 21-23</h4>
+          <p><i class="bi bi-geo-alt"></i> вул. Виконкомівська, 21-23</p>
+          <p><i class="bi bi-calendar-event"></i> Початок будівництва: січень 2021</p>
+          <p><i class="bi bi-building"></i> Введення в експлуатацію: літо 2026 р</p>
+          <div class="object-line-bold"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="container text-center text-md-start">
+      <div class="row align-items-center">
+      
+        <div class="col-md-4 mb-3 footer-logo text-center text-md-start">
+          <img src="img/logo.jpg" alt="Borovych S. Logo" height="100" class="me-3">
+        </div>
+
+        <div class="col-md-4 mb-3 footer-text ">
+          <p class="mb-1">Контакти</p>
+          <p class="mb-1">Політика конфіденційності сайту</p>
+          <p><i class="bi bi-envelope me-2"></i> info@borovych-s.com.ua</p>
+        </div>
+
+       <div class="col-md-4 footer-join">
+  <p class="mb-3">Приєднуйтесь</p>
+  <div class="social-icons">
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-telegram"></i></a>
+  </div>
+</div>
+      </div>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
